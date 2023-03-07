@@ -5,3 +5,5 @@ const printGreeting = () => {
         console.log(string);
     }
 }
+
+printGreeting();
