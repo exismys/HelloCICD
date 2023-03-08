@@ -1,7 +1,7 @@
 FROM node:18-alpine3.16
 WORKDIR /app
-COPY package*.json ./
+COPY ./sample-app/package*.json ./
 RUN npm ci
-COPY . ./
+COPY ./sample-app ./
 CMD ["npm", "start"]
 EXPOSE 3000
